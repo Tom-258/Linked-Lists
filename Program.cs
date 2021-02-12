@@ -11,8 +11,26 @@ namespace Linked_Lists
         static void Main(string[] args)
         {
             var shoppingList = new LinkedList<object>();
-            shoppingList.Add("hello");
-            shoppingList.ReturnList();
+            shoppingList.Add("water");
+            shoppingList.Remove("water");
+            shoppingList.Add("apple");
+            shoppingList.Add("banana");
+            shoppingList.Add("orange");
+            Console.WriteLine(shoppingList[2]);
+            shoppingList.Add("vegetables");
+            shoppingList.RemoveAt(0);
+            shoppingList.RemoveAt(1);
+            shoppingList.Add(null);
+            shoppingList.Remove(null);
+            for (var i = 0; i < shoppingList.GetLength(); i++)
+            {
+                Console.WriteLine("\n=> {0}", shoppingList[i]);
+            }
+
+            Console.WriteLine(shoppingList.IndexOf("apple"));
+            Console.WriteLine(shoppingList.IndexOf("vegetables"));
+
+
         }
     }
 
