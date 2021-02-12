@@ -29,6 +29,8 @@ namespace Linked_Lists
 
             Console.WriteLine(shoppingList.IndexOf("apple"));
             Console.WriteLine(shoppingList.IndexOf("vegetables"));
+            Console.WriteLine(shoppingList.Contains("banana"));
+            Console.WriteLine(shoppingList.Contains("chocolate"));
 
 
         }
